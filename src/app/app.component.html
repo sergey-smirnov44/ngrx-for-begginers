@@ -1,2 +1,7 @@
+<button (click)="inc()" class="fz-60 m-20 p-50">+1</button>
+<button (click)="dec()" [disabled]="cannotDec" class="fz-60 m-20 p-50">-1</button>
+<button (click)="clear()" [disabled]="cannotDec" class="fz-60 m-20 p-50">=0</button>
 
+<p class="fz-60"> Счетчик = {{ counter }}</p>
 
+<p *ngIf="updateAt" class="fz-60">Update {{updateAt | date: "HH:mm:ss dd/MM/yyyy"}}</p>
